@@ -346,7 +346,7 @@
   }
 
   // ---- Authentication: manual access token, or sign in through a Pulsoid API client (OAuth implicit grant) ----
-  var 21cc0e02-9967-4ee7-aa0f-98205ff3cd2a = '';   // Sharing this file? Put your public client ID here so others can just click sign in.
+  var CLIENT_ID_DEFAULT = '21cc0e02-9967-4ee7-aa0f-98205ff3cd2a';   // Sharing this file? Put your public client ID here so others can just click sign in.
   var authMode = 'token', oauthToken = '', leaving = false;
 
   function redirectUri() { return location.protocol === 'file:' ? '' : location.origin + location.pathname; }
