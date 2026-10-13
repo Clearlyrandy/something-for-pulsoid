@@ -370,7 +370,7 @@
     var state = Array.prototype.map.call(a, function (b) { return ('0' + b.toString(16)).slice(-2); }).join('');
     try { sessionStorage.setItem('hr-oauth-state', state); } catch (e) {}
     var url = 'https://pulsoid.net/oauth2/authorize?response_type=token&client_id=' + encodeURIComponent(id) +
-      '&redirect_uri=' + encodeURIComponent(ru || 'http://localhost') + '&scope=data:heart_rate:read&state=' + encodeURIComponent(state) +
+      '&redirect_uri=' + encodeURIComponent(ru || 'https://clearlyrandy.github.io/something-for-pulsoid/') + '&scope=data:heart_rate:read&state=' + encodeURIComponent(state) +
       (copyMode ? '&response_mode=web_page' : '');
     if (copyMode) {
       window.open(url, '_blank', 'noopener');
